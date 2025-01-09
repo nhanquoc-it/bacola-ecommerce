@@ -5,12 +5,22 @@
 :root {
 	--primary-font: "Inter", serif;
 	--secondary-font: "Dosis", serif;
+
+	--black: #000;
+	--white: #fff;
+	--primary-color: #233a95;
 }
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+html {
+	font-size: 62.5%;
+}
+
 body {
 	font-family: var(--primary-font);
+	font-size: 1.6rem;
 }

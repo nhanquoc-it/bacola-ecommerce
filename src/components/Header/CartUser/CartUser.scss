@@ -1,0 +1,40 @@
+.header-bottom {
+	.nqd-circle {
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		min-width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		outline: none;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		color: var(--black);
+
+		svg {
+			font-size: 2.2rem;
+		}
+	}
+	.nqd-cart {
+		.nqd-price {
+			font-size: 1.8rem;
+			font-weight: 700;
+			color: rgba(0, 0, 0, 0.8);
+		}
+		button {
+			background-color: #fff1ee;
+		}
+		svg {
+			color: #ea2d0f;
+		}
+		.nqd-count {
+			position: absolute;
+			top: -6px;
+			right: -4px;
+			background-color: #ea2d0f;
+			color: var(--white);
+			border-radius: 50%;
+			width: 25px;
+			height: 25px;
+		}
+	}
+}
