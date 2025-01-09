@@ -2,8 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-// Import Components
-import Header from "~/components/Header/Header.jsx";
+import { Header } from "~/components/Header";
 import Home from "~/pages/Home/Home.jsx";
 
 function App() {

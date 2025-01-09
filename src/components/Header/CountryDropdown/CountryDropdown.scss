@@ -1,0 +1,31 @@
+.header-bottom {
+	.nqd-country-dropdown {
+		width: 150px;
+		min-width: 150px;
+		height: 60px;
+		text-align: left;
+		justify-content: start;
+		color: var(--black);
+		border: 1px solid #d9d9e9;
+		border-radius: 4px;
+		padding: 10px;
+		outline: none;
+
+		.label {
+			font-size: 1.2rem;
+			text-transform: capitalize;
+			color: rgba(0, 0, 0, 0.7);
+		}
+		.name {
+			font-size: 1.4rem;
+			line-height: 1.4rem;
+			font-weight: 700;
+			text-transform: capitalize;
+			color: var(--primary-color);
+		}
+		.dropdown-icon svg {
+			opacity: 0.7;
+			font-size: 1.4rem;
+		}
+	}
+}

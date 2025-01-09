@@ -1,0 +1,24 @@
+.header {
+	.header-top {
+		padding: 8px 0px;
+
+		p {
+			color: var(--white);
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
+	}
+	.header-bottom {
+		width: 100%;
+		height: auto;
+		padding: 15px 0px;
+
+		.nqd-logo {
+			width: 100%;
+		}
+	}
+}
+
+.bg-blue {
+	background-color: var(--primary-color);
+}
