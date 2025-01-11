@@ -6,12 +6,12 @@ import Logo from "~/assets/images/bacola-logo.png";
 import { CountryDropdown } from "~/components/Header";
 import { SearchBox } from "~/components/Header";
 import { CartUser } from "~/components/Header";
+import { Navigation } from "~/components/Navigation";
 
 const Header = () => {
 	return (
 		<>
 			<header className="header">
-				
 				<div className="header-top bg-blue">
 					<div className="container">
 						<p className="mb-0 mt-0 text-center">
@@ -38,6 +38,9 @@ const Header = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* Navigation */}
+				<Navigation />
 			</header>
 		</>
 	);
