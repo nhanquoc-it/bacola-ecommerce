@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Logo from "~/assets/images/bacola-logo.png";
 import { CountryDropdown } from "~/components/Header";
-import { SearchBox } from "~/components/Header";
+import { SearchBox } from "~/components/SearchBox";
 import { CartUser } from "~/components/Header";
 import { Navigation } from "~/components/Navigation";
 
