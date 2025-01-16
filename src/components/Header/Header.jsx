@@ -1,6 +1,7 @@
-import React from "react";
-import "./Header.scss";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import "./Header.scss";
+import { MyContext } from "~/App";
 
 import Logo from "~/assets/images/bacola-logo.png";
 import { CountryDropdown } from "~/components/Header";
@@ -9,6 +10,8 @@ import { CartUser } from "~/components/Header";
 import { Navigation } from "~/components/Navigation";
 
 const Header = () => {
+	const context = useContext(MyContext);
+
 	return (
 		<>
 			<header className="header">
@@ -31,7 +34,8 @@ const Header = () => {
 							</div>
 
 							<div className="col-sm-10 d-flex align-items-center">
-								<CountryDropdown />
+								{context.countryList.length !== 0 && <CountryDropdown />}
+
 								<SearchBox />
 								<CartUser />
 							</div>

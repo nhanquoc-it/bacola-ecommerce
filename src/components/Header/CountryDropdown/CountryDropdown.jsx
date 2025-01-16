@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Button } from "@mui/material";
 import { FaAngleDown } from "react-icons/fa6";
 
 import "./CountryDropdown.scss";
 import { ModalDialog } from "~/components/ModalDialog";
+import { MyContext } from "~/App";
 
 const CountryDropdown = () => {
-	// Khởi tạo state
+	const context = useContext(MyContext);
+
+	// Initialize state
 	const [isOpenModal, setIsOpenModal] = useState(false);
 
-	// Hàm xử lý mở modal dialog
+	// Handling open modal dialog
 	const handleOpenModal = () => {
 		setIsOpenModal(true);
 	};
-	// Hàm xử lý đóng modal dialog
+	// Handling close modal dialog
 	const handleCloseModal = () => {
 		setIsOpenModal(false);
 	};
@@ -23,14 +26,24 @@ const CountryDropdown = () => {
 			<Button className="nqd-country-dropdown" onClick={handleOpenModal}>
 				<div className="info d-flex flex-column">
 					<span className="label">Your Location</span>
-					<span className="name">India</span>
+					<span className="name">
+						{context.selectedCountry !== ""
+							? context.selectedCountry.length > 10
+								? context.selectedCountry?.substr(0, 10) + "..."
+								: context.selectedCountry
+							: "Select Location"}
+					</span>
 				</div>
 				<span className="ml-auto dropdown-icon">
 					<FaAngleDown />
 				</span>
 			</Button>
 
-			<ModalDialog open={isOpenModal} handleClose={handleCloseModal} />
+			<ModalDialog
+				open={isOpenModal}
+				handleClose={handleCloseModal}
+				setIsOpenModal={setIsOpenModal}
+			/>
 		</>
 	);
 };
