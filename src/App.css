@@ -1,6 +1,10 @@
 /*==== Import Google Fonts ====*/
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/*==== Import Slider Carousel ====*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
 /*==== Reset CSS ====*/
 :root {
 	--primary-font: "Inter", serif;
