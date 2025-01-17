@@ -12,6 +12,7 @@
 
 	--black: #000;
 	--white: #fff;
+	--text-light: #9b9bb4;
 	--primary-color: #233a95;
 	--secondary-color: #2bbef9;
 	--color-text: #202435;
@@ -31,12 +32,13 @@ body {
 	font-size: 1.6rem;
 }
 
+/* @ CSS Scrollbar */
 ::-webkit-scrollbar {
 	width: 8px;
 	height: 8px;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: #ccc;
+	background-color: var(--text-light);
 }
 ::-webkit-scrollbar-track {
 	background-color: transparent;

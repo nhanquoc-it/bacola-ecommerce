@@ -1,11 +1,13 @@
 import React from "react";
-import { HomeBanner } from "~/components/HomeBanner";
+import { HomeBanner } from "~/components/Home";
+import { HomeProduct } from "~/components/Home";
 
 const Home = () => {
 	return (
-		<section className="home-section">
+		<>
 			<HomeBanner />
-		</section>
+			<HomeProduct />
+		</>
 	);
 };
 
