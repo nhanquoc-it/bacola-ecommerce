@@ -22,10 +22,34 @@
 				ul li {
 					width: 100%;
 					list-style: none;
+					position: static;
+
+					.nqd-sub-menu-cate {
+						position: absolute;
+						top: 0;
+						left: 110%;
+						width: 250px;
+						height: 100%;
+						background-color: var(--white);
+						z-index: 100;
+						transition: all 0.2s ease-in-out;
+						border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+						opacity: 0;
+						visibility: hidden;
+					}
+
+					&:hover .nqd-sub-menu-cate {
+						opacity: 1;
+						visibility: inherit;
+						left: 100%;
+					}
 
 					a {
 						font-family: var(--secondary-font), sans-serif;
-						display: block;
+						display: flex;
+						align-items: center;
+						justify-content: start;
 						color: rgba(0, 0, 0, 0.8);
 						width: 100%;
 						text-decoration: none;
@@ -34,6 +58,11 @@
 						padding: 8px 24px;
 						text-transform: uppercase;
 						transition: all 0.2s ease-in-out;
+
+						svg {
+							font-size: 1.2rem;
+							opacity: 0.8;
+						}
 
 						&:hover {
 							background-color: #f0faff;
