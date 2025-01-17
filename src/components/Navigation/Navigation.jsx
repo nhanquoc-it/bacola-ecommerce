@@ -10,7 +10,7 @@ import { TbTools } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
-	const [isOpenSidebar, setIsOpenSidebar] = useState(true);
+	const [isOpenSidebar, setIsOpenSidebar] = useState(false);
 
 	return (
 		<nav>
