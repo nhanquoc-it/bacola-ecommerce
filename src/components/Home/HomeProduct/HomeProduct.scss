@@ -1,0 +1,29 @@
+/* Home Product */
+.home-product {
+	padding: 25px 0;
+	width: 100%;
+
+	.nqd-banner-left {
+		width: 100%;
+		border-radius: 6px;
+		overflow: hidden;
+
+		.nqd-banner-image {
+			cursor: pointer;
+		}
+	}
+	.nqd-info-right {
+		.nqd-heading {
+			font-size: 1.8rem;
+			font-weight: 600;
+			font-family: var(--secondary-font);
+			color: var(--color-text);
+			text-transform: uppercase;
+		}
+		.nqd-desc {
+			color: var(--text-light);
+			font-size: 1.2rem;
+			font-family: var(--primary-font);
+		}
+	}
+}
