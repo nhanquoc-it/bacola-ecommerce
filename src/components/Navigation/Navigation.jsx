@@ -8,6 +8,7 @@ import { MdToys } from "react-icons/md";
 import { GiHealing } from "react-icons/gi";
 import { TbTools } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import { FaAngleRight } from "react-icons/fa6";
 
 const Navigation = () => {
 	const [isOpenSidebar, setIsOpenSidebar] = useState(false);
@@ -38,25 +39,67 @@ const Navigation = () => {
 							>
 								<ul>
 									<li>
-										<Link to="/">Toys & Models</Link>
+										<Link to="/">
+											Toys & Models
+											<FaAngleRight className="ml-auto" />
+										</Link>
+										<div className="nqd-sub-menu-cate">
+											<Link to="/">Domestic Books</Link>
+											<Link to="/">Foreign Books</Link>
+											<Link to="/">Brand Cooperation Model</Link>
+											<Link to="/">Souvenir Shop</Link>
+										</div>
 									</li>
 									<li>
-										<Link to="/">Beauty Health</Link>
+										<Link to="/">
+											Beauty Health
+											<FaAngleRight className="ml-auto" />
+										</Link>
+										<div className="nqd-sub-menu-cate">
+											<Link to="/">Souvenir Shop</Link>
+											<Link to="/">Foreign Books</Link>
+											<Link to="/">Brand Cooperation Model</Link>
+											<Link to="/">Domestic Books</Link>
+										</div>
 									</li>
 									<li>
-										<Link to="/">School Supplies</Link>
+										<Link to="/">
+											School Supplies
+											<FaAngleRight className="ml-auto" />
+										</Link>
+										<div className="nqd-sub-menu-cate">
+											<Link to="/">Domestic Books</Link>
+											<Link to="/">Foreign Books</Link>
+											<Link to="/">Brand Cooperation Model</Link>
+											<Link to="/">Souvenir Shop</Link>
+										</div>
 									</li>
 									<li>
-										<Link to="/">School Supplies</Link>
+										<Link to="/">
+											School Supplies
+											<FaAngleRight className="ml-auto" />
+										</Link>
+										<div className="nqd-sub-menu-cate">
+											<Link to="/">Domestic Books</Link>
+											<Link to="/">Foreign Books</Link>
+											<Link to="/">Brand Cooperation Model</Link>
+											<Link to="/">Souvenir Shop</Link>
+										</div>
 									</li>
 									<li>
-										<Link to="/">School Supplies</Link>
+										<Link to="/">
+											School Supplies
+											<FaAngleRight className="ml-auto" />
+										</Link>
+										<div className="nqd-sub-menu-cate">
+											<Link to="/">Domestic Books</Link>
+											<Link to="/">Foreign Books</Link>
+											<Link to="/">Brand Cooperation Model</Link>
+											<Link to="/">Souvenir Shop</Link>
+										</div>
 									</li>
 									<li>
-										<Link to="/">School Supplies</Link>
-									</li>
-									<li>
-										<Link to="/">School Supplies</Link>
+										<Link to="/">More</Link>
 									</li>
 								</ul>
 							</div>
