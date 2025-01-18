@@ -1,0 +1,118 @@
+.nqd-product-list {
+	.nqd-product-item {
+		width: 100%;
+		height: auto;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+
+		.nqd-product-image {
+			overflow: hidden;
+
+			img {
+				transition: all 0.3s ease-in-out;
+			}
+
+			&:hover img {
+				transform: scale(1.1);
+			}
+		}
+
+		&:hover .nqd-product-actions {
+			opacity: 1;
+			right: 10px;
+		}
+
+		.nqd-badge-product {
+			display: inline-block;
+			padding: 6px 12px;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			z-index: 100;
+			border-radius: 4px;
+			font-size: 1.1rem;
+			font-weight: 600;
+		}
+
+		.nqd-product-actions {
+			position: absolute;
+			top: 20px;
+			right: -100%;
+			z-index: 1000;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			transition: all 0.3s ease-in-out;
+
+			button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-width: 40px;
+				width: 40px;
+				height: 40px;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				border-radius: 50%;
+				box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+				background-color: var(--white);
+				outline: none;
+				transition: all 0.1s;
+
+				&:hover {
+					background-color: var(--primary-color);
+				}
+
+				svg {
+					color: var(--black);
+					opacity: 0.7;
+					font-size: 1.6rem;
+					pointer-events: none;
+				}
+
+				&:hover svg {
+					color: var(--white);
+				}
+			}
+		}
+
+		.nqd-badge-primary {
+			color: var(--white);
+			background-color: var(--secondary-color);
+		}
+
+		.nqd-product-info {
+			padding: 15px;
+
+			.product-name {
+				font-size: 1.4rem;
+				font-weight: 600;
+				color: var(--color-text);
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--primary-color);
+        }
+			}
+			.product-stock,
+			.product-old-price,
+			.product-new-price {
+				font-family: var(--secondary-font);
+				font-weight: 600;
+			}
+			.product-stock {
+				font-size: 1.2rem;
+				text-transform: uppercase;
+				color: var(--color-green);
+			}
+			.product-old-price {
+				font-size: 1.5rem;
+				text-decoration: line-through;
+				color: var(--color-gray);
+			}
+			.product-new-price {
+				font-size: 1.8rem;
+				color: var(--color-red);
+			}
+		}
+	}
+}

@@ -1,5 +1,9 @@
 import React from "react";
+import { Button } from "@mui/material";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import "./HomeProduct.scss";
+import { ProductList } from "~/components/ProductList";
 
 const HomeProduct = () => {
 	return (
@@ -23,7 +27,14 @@ const HomeProduct = () => {
 									Do not miss the current offers until the end of March.
 								</p>
 							</div>
+
+							<Button className="nqd-view-all ml-auto">
+								View All <FaArrowRightLong />
+							</Button>
 						</div>
+
+						{/* @ Product List  */}
+						<ProductList />
 					</div>
 				</div>
 			</div>

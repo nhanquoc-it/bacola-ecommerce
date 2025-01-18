@@ -9,13 +9,17 @@
 :root {
 	--primary-font: "Inter", serif;
 	--secondary-font: "Dosis", serif;
-
+	
 	--black: #000;
 	--white: #fff;
 	--text-light: #9b9bb4;
 	--primary-color: #233a95;
 	--secondary-color: #2bbef9;
+
 	--color-text: #202435;
+	--color-green: #00b853;
+	--color-red: #d51243;
+	--color-gray:#c2d2d3;
 }
 * {
 	margin: 0;
